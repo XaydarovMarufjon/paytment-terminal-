@@ -93,12 +93,11 @@ input{
 .chek{
   width: 87%;
   background-color: aqua;
-
   height: 50%;
   transform: translateY(30px);
   z-index: -1;
   position: absolute;
-
+  transition: 2s;
 }
 
 .boxtab{
