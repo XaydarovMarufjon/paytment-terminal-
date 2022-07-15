@@ -18,6 +18,7 @@ function getCheck(event) {
         summa.innerHTML = summaInp ;
         names.innerHTML = ismInp ;
         cashback.innerHTML = summaInp*0.01 ;
+        // local 
     
         let d = new Date ;
         date.innerHTML  =` ${d.getHours()} :  ${d.getMinutes()} : ${d.getSeconds()}`
