@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body >
 
     <center>
 
@@ -16,14 +16,28 @@
     <div class="terminal">
        
         <div class="outcheck">  
-            <div class="check">    
+            <div class="check">  
+                  
+                <h3>Your check</h3>
+                <p>****************</p>
+                <div  style="text-align: start; padding: 20px; font-family: 'Nanum Gothic', sans-serif; font-size: 12px; line-height: 20px;">
+                    <b><p class="flex">Summa : <span id="summa"></span> </p>  </b>   
+                    <p class="flex"> Name :  <span id="names"></span></p> 
+                    <p class="flex"> CashBack 1% :  <span id="cashback"></span></p> 
+                    <p class="flex">Date time : <span id="date"></span></p> 
+                </div>
+                <hr>
+                <p>Marvell IT MCHJ***** </p>
+                <p>================</p>
+                <p>Thank you !</p>
+                
             </div>   
          </div>
 
     
             <div class="ekran">
-                <input type="text" id="summa" placeholder=" summani kiriting...">
-                <input type="text" id="ism" placeholder=" ism familiya kiriting...">   
+                <input type="text" id="summaInp" placeholder=" summani kiriting..." value="">
+                <input type="text" id="ismInp" placeholder=" ism familiya kiriting...">   
              </div>
            
              <div class="btns">
@@ -38,7 +52,8 @@
                 <button id="btn9">9</button>
                 <button id="btn0">0</button>
              </div>
-             <button class="getCheck">Get check</button>
+             <button class="getCheck" onclick="getCheck()">Get check</button>
+             <button class="reload "> check reload</button>
    
 
     </div>
@@ -50,7 +65,7 @@
     <div class="boxes">
 
         <div class="chek">
-            
+
         </div>
        
         <div class="boxtab">
