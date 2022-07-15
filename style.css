@@ -5,21 +5,21 @@
 }
 
 .terminal{
-    border: 2px solid black;
-    border-radius: 20px ;
+    width: 300px;
+    margin: 300px;
+    background-color: aqua;
     padding: 30px  15px;
-    width: 30%;
-    margin: 100px;
+    border: 2px solid black;
+    border-radius:0 0 20px 20px ;
 }
+
 input{
     width: 100%;
     padding: 5px;
     outline: none;
-  margin: 10px 0;
-  border: none;
-  background-color: aliceblue;
-
-
+    margin: 10px 0;
+     border: none;
+     background-color: aliceblue;
 }
 .btns button {
     width: 30%;
@@ -41,14 +41,7 @@ input{
     border: none;
     border-radius: 3px;
 }
-.outcheck{
-    width: 228px;
-    border: 2px solid red;
-    margin-bottom: 30px;
-    padding: 2px;
-    overflow: hidden;
-    position: relative;
-}
+
 .ekran{
     padding: 5px;
     color: green ;
@@ -59,18 +52,66 @@ input{
     border-radius: 10px;
 }
 .check{
-    width: 220px;
-    border: 2px solid black;
-    height: 100px;
+    width: 98%;
+    border: 1px solid black;
+    height: 200px;
     position: absolute;
     background-color: white;
-    /* z-index: -2; */
     transform: translateY(0px);
     transition: 2s;
-}
-.terminal:hover .check{
-    transform: translateY(-100px);
-}
-.terminal:hover .outcheck{
+    z-index: -1;
+    background-color: rgb(255, 253, 251);
     
 }
+.outcheck{
+    width: 80%;
+    border: 2px solid red;
+    padding: 2px;
+    position: relative;
+    bottom: 34px; 
+    background-color: white;   
+
+}
+.terminal:hover .check{
+    transform: translateY(-190px);
+}
+.terminal:hover .outcheck{
+    border-top-color: transparent;
+}
+
+
+.boxes{
+    width: 300px;
+    height: 400px;
+    border: 2px solid black;
+    margin: 200px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.chek{
+  width: 87%;
+  background-color: aqua;
+
+  height: 50%;
+  transform: translateY(30px);
+  z-index: -1;
+  position: absolute;
+
+}
+
+.boxtab{
+    width: 100%;
+    border: 10px solid green ;
+    height: 100%;
+  }
+
+  .boxes:hover .chek {
+    transform: translateY(-100px);
+  }
+
+
+
+
+
