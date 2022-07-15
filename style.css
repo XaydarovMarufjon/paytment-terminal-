@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.terminal{
+    border: 2px solid black;
+    border-radius: 20px ;
+    padding: 30px  15px;
+    width: 30%;
+    margin: 100px;
+}
+input{
+    width: 100%;
+    padding: 5px;
+    outline: none;
+  margin: 10px 0;
+  border: none;
+  background-color: aliceblue;
+
+
+}
+.btns button {
+    width: 30%;
+    margin: 3px 0;
+    padding: 5px 0;
+    
+}
+.btns{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.getCheck{
+    width: 100%;
+    padding: 7px;
+    background-color: rgb(86, 244, 86);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+.outcheck{
+    width: 228px;
+    border: 2px solid red;
+    margin-bottom: 30px;
+    padding: 2px;
+    overflow: hidden;
+    position: relative;
+}
+.ekran{
+    padding: 5px;
+    color: green ;
+    margin-bottom: 10px;
+    font-size: 20px ;
+    font-family: 'Cascadia Mono ExtraLight';
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.check{
+    width: 220px;
+    border: 2px solid black;
+    height: 100px;
+    position: absolute;
+    background-color: white;
+    /* z-index: -2; */
+    transform: translateY(0px);
+    transition: 2s;
+}
+.terminal:hover .check{
+    transform: translateY(-100px);
+}
+.terminal:hover .outcheck{
+    
+}
